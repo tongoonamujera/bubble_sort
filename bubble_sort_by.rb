@@ -1,11 +1,11 @@
-def bubble_sort(arr)
+def bubble_sort_by(arr)
   return arr if arr.length <= 1
 
   swap_element = true
 
   while swap_element
     swap_element = false
-  
+
     if arr.all? { |x| x.is_a? Numeric }
       (arr.length - 1).times do |i|
         if arr[i] > arr[i + 1]
