@@ -1,11 +1,11 @@
-def bubble_sort(a = [])
+def bubble_sort(arr = [])
   b = []
-  if a.all? { |x| x.is_a? Numeric }
-    a.min(a.max)
+  if arr.all? { |x| x.is_a? Numeric }
+    arr.min(arr.max)
   else
-    for i in a
+    for i in arr
       b << i.capitalize
     end
-    b.min(a.size)
+    b.min(arr.size)
   end
 end
