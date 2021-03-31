@@ -30,9 +30,3 @@ def b_sort(arr)
   end
   arr
 end
-
-my_us_arr = [10, -5.6, 9, 30, 20000, 7, 10000, 100]
-
-my_ns_arr = ['tongoona', 'aaaa', 'Aaaaa', 'aaaaaa', 'aaaaaaa']
-
-print b_sort(my_us_arr)
