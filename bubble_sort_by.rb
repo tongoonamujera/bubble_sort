@@ -3,7 +3,7 @@ def bubble_sort(arr = [])
   if arr.all? { |x| x.is_a? Numeric }
     arr.min(arr.max)
   else
-    for i in arr
+    arr.each do |i|
       b << i.capitalize
     end
     b.min(arr.size)
