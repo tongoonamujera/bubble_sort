@@ -24,9 +24,3 @@ def bubble_sort_by(arr)
   end
   return arr
 end
-
-my_us_arr = [10, -5.6, 9, 30, 20000, 7, 10000, 100]
-
-my_ns_arr = ['tongoona', 'aaaa', 'Aaaaa', 'aaaaaa', 'aaaaaaa']
-
-print bubble_sort_by(my_ns_arr)
