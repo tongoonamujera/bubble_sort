@@ -1,4 +1,4 @@
-def bubble_sort_by(arr)
+def sort_by(arr)
   return arr if arr.length <= 1
 
   swap_element = true
