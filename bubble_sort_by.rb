@@ -10,7 +10,6 @@ def bubble_sort(arr = [])
   end
 end
 
-
 def b_sort(arr)
   return arr if arr.length <= 1
 
@@ -18,7 +17,7 @@ def b_sort(arr)
 
   while swap_element
     swap_element = false
-  
+
     if arr.all? { |x| x.is_a? Numeric }
       (arr.length - 1).times do |i|
         arr[i] > arr[i + 1] ? (arr[i], arr[i + 1] = arr[i + 1], arr[i]) : swap_element = true
@@ -29,7 +28,7 @@ def b_sort(arr)
       end
     end
   end
-  return arr
+  arr
 end
 
 my_us_arr = [10, -5.6, 9, 30, 20000, 7, 10000, 100]
