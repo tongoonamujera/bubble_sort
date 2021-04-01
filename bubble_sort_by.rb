@@ -10,17 +10,13 @@ def bubble_sort(arr = [])
   end
 end
 
-
-
 def bubble_sort_by(arr)
   return arr if arr.length <= 1
 
   def swap(arr)
     swap_element = true
-  
     while swap_element
       swap_element = false
-  
       (arr.length - 1).times do |i|
         if arr[i].length > arr[i + 1].length
           arr[i], arr[i + 1] = arr[i + 1], arr[i]
