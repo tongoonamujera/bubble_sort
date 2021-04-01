@@ -13,7 +13,7 @@ end
 def bubble_sort_by(arr)
   return arr if arr.length <= 1
 
-  swap = ->(array) {
+  swap = ->(array) do
     swap_element = true
   
     while swap_element
@@ -26,7 +26,7 @@ def bubble_sort_by(arr)
         end
       end
     end
-  }
+  end
 
   arr
 end
