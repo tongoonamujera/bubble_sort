@@ -10,41 +10,23 @@ def bubble_sort(arr = [])
   end
 end
 
-def swap(arr)
-  swap_element = true
-
-  while swap_element
-    swap_element = false
-    (arr.length - 1).times do |i|
-      yield(arr[i], arr[i + 1]).positive?
-        if arr[i].size > arr[i + 1].size
-          arr[i], arr[i + 1] = arr[i + 1], arr[i]
-          swap_element = true
-        end
-    end
-  end
-end
-
 def bubble_sort_by(arr)
   return arr if arr.length <= 1
 
-  def swap(arr)
+  swap = -> (arr) {
     swap_element = true
   
     while swap_element
       swap_element = false
       (arr.length - 1).times do |i|
         yield(arr[i], arr[i + 1]).positive?
-          if arr[i].size > arr[i + 1].size
-            arr[i], arr[i + 1] = arr[i + 1], arr[i]
-            swap_element = true
-          end
+        if arr[i].size > arr[i + 1].size
+          arr[i], arr[i + 1] = arr[i + 1], arr[i]
+          swap_element = true
+        end
       end
     end
-  end
+  }
 
   arr
 end
-
-my_ns_arr = ['tongoona', 'aaaa', 'Aaaaa', 'aaaaaa', 'aaaaaaa']
-print bubble_sort_by(my_ns_arr)
