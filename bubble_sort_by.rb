@@ -10,23 +10,26 @@ def bubble_sort(arr = [])
   end
 end
 
-def bubble_sort_by(arr)
-  return arr if arr.length <= 1
+def swap(arr)
+  swap_element = true
 
-  swap = ->(array) do
-    swap_element = true
-  
-    while swap_element
-      swap_element = false
-      (array.length - 1).times do |i|
-        yield(array[i], array[i + 1]).positive?
-        if array[i].size > array[i + 1].size
-          array[i], array[i + 1] = array[i + 1], array[i]
-          swap_element = true
-        end
+  while swap_element
+    swap_element = false
+
+    (arr.length - 1).times do |i|
+      if arr[i].length > arr[i + 1].length
+        arr[i],arr[i + 1] = arr[i + 1],arr[i]
+        swap_element = true
       end
     end
   end
+
+end
+
+def bubble_sort_by(arr)
+  return arr if arr.length <= 1
+
+  swap_one = -> {swap(arr)}
 
   arr
 end
