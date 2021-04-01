@@ -13,15 +13,15 @@ end
 def bubble_sort_by(arr)
   return arr if arr.length <= 1
 
-  swap = -> (arr) {
+  swap = ->(array) {
     swap_element = true
   
     while swap_element
       swap_element = false
-      (arr.length - 1).times do |i|
-        yield(arr[i], arr[i + 1]).positive?
-        if arr[i].size > arr[i + 1].size
-          arr[i], arr[i + 1] = arr[i + 1], arr[i]
+      (array.length - 1).times do |i|
+        yield(array[i], array[i + 1]).positive?
+        if array[i].size > array[i + 1].size
+          array[i], array[i + 1] = array[i + 1], array[i]
           swap_element = true
         end
       end
