@@ -18,7 +18,7 @@ def swap(arr)
 
     (arr.length - 1).times do |i|
       if arr[i].length > arr[i + 1].length
-        arr[i],arr[i + 1] = arr[i + 1],arr[i]
+        arr[i], arr[i + 1] = arr[i + 1], arr[i]
         swap_element = true
       end
     end
@@ -29,7 +29,7 @@ end
 def bubble_sort_by(arr)
   return arr if arr.length <= 1
 
-  swap_one = -> {swap(arr)}
+  swap_one = -> { swap(arr) }
 
   arr
 end
