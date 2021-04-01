@@ -41,11 +41,3 @@ def bubble_sort_by(arr)
 
   arr
 end
-
-arrz = ["helllllloooo", "hellllooo", "helllooo", "helllo", "hell"]
-
-arry = [10, 20, 11, 55, 30, 111,15]
-
-print bubble_sort_by(arrz) #=>["hell", "helllo", "helllooo", "hellllooo", "helllllloooo"]
-
-print bubble_sort_by(arry) #=>[10, 11, 15, 20, 30, 55, 111]
