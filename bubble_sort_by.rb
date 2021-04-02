@@ -11,7 +11,7 @@ def bubble_sort(arr = [])
 end
 
 def bubble_sort_by(arr)
-  yield(arr) if arr.length <= 1 unless block_given?
+  yield(arr) if arr.length <=1
 
   swap_element = true
   while swap_element
@@ -26,3 +26,6 @@ def bubble_sort_by(arr)
 
   arr
 end
+
+my_ns_arr = ['tongoona', 'aaaa', 'Aaaaa', 'aaaaaa', 'aaaaaaa']
+print bubble_sort_by(my_ns_arr)
