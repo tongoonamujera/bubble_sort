@@ -4,6 +4,11 @@
 
 * the task description can be found at https://www.theodinproject.com/courses/ruby-programming/lessons/bubble-sort
 
+## Built With
+
+- Ruby language
+
+
 ## Authors
 👤 **Tongoona Mujera**
 
@@ -12,10 +17,17 @@
 - Linkedin: [tongoona-mujera](https://www.linkedin.com/in/tongoona-mujera-125604162/)
 - Email:  tongoonamujera@gmail.com
 
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
 ## Show your support
 
 Give a ⭐️ if you like this project.!
 
 ## 📝 License
 
-This project is [Microverse](https://microverse.org) licensed.
+This project is [MIT](./MIT.md) licensed.
+
