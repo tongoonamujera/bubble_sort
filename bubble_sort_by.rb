@@ -11,21 +11,18 @@ def bubble_sort(arr = [])
 end
 
 def bubble_sort_by(arr)
-  return arr if arr.length <= 1
+  yield(arr)if arr.length <= 1 unless block_given?
 
   swap_element = true
   while swap_element
     swap_element = false
     (arr.length - 1).times do |i|
-      if arr[i].length > arr[i + 1].length
-        arr[i], arr[i + 1] = arr[i + 1], arr[i]
-        swap_element = true
-      end
+        if arr[i].length > arr[i + 1].length
+          arr[i], arr[i + 1] = arr[i + 1], arr[i]
+          swap_element = true
+        end
     end
   end
 
   arr
 end
-
-my_ns_arr = %w[h hi hey hiya hello]
-print bubble_sort_by(my_ns_arr)
